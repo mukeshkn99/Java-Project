@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function validation(){
+var a=document.form.username.value;
+var b=document.form.password.value;
+if(a==""){
+alert("Enter name");
+document.form.username.focus;
+return false;
+}
+if(b==""){
+alert("Enter password");
+document.form.password.focus;
+return false;
+}
+}
+</script>
+<style type="text/css">
+body{
+background-image: url("images/machine7.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+}
+#title{
+margin-left:450px;
+margin-top:10px;
+font-size:30px;
+width:1200px;
+font-family:fantasy;
+color:green;
+}
+#box{
+list-style:none;
+margin-left:490px;
+margin-bottom:10px;
+margin-top:50px;
+}
+#home{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:200px;
+height:30px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+#doc{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:200px;
+height:30px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+#pat{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:300px;
+height:10px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+
+#in{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:300px;
+height:10px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+#patient{
+margin-left:590px;
+margin-top:80px;
+font-size: 27px;
+color:darkblue;
+}
+#username{
+margin-left:500px;
+margin-top: 20px;
+color:;
+}
+#name{
+border:1px solid black;
+width:200px;
+}
+#password{
+margin-left:503px;
+margin-top:10px;
+}
+
+#pass{
+border:1px solid black;
+width:200px;
+}
+#sub{
+border: 1px solid balck;
+width:60px;
+height:28px;
+margin-top: 10px;
+background-color:red;
+color:white;
+margin-left:590px;
+
+}
+#reg{
+border:2px solid silver;
+width:60px;
+height:26px;
+margin-left: 10px;
+text-decoration: none;
+background-color:blue;
+color:white;
+padding:3px;
+}
+</style>
+</head>
+<body>
+<div id="title">
+TAILORED TREATEMENT RECOMMENDATION
+</div>
+<ol id="box">
+<li>
+<a href="Doctor.html" id="doc">Doctor</a>
+<a href="patient.html" id="pat">Patient</a>
+<a href="Doctor.html" id="in">Logout</a></li>
+</ol>
+<form name="form" action="palogin.jsp" method="post" onsubmit="return validation()">
+<div id="patient">Patient Login</div>
+<div id="username">Username
+<input type="text" name="username" id="name"></div>
+<div id="password">Password
+<input type="password" name="password" id="pass"></div>
+<div>
+<input type="submit" value="Login"id="sub">
+<a href="patreg.html" id="reg">Register</a>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function validation(){
+var b=document.form.age.value;
+var c=document.form.gender.value;
+var d=document.form.pressure.value;
+var e=document.form.cholestral.value;
+var f=document.form.sugar.value;
+var g=document.form.electrocardiograph.value;
+var h=document.form.heartrate.value;
+var i=document.form.angina.value;
+var j=document.form.strest.value;
+if(b==""){
+	alert("Enter age");
+	document.form.age.focus();
+	return false;
+	}
+if((document.form.gender[0].checked==false)&&(document.form.gender[1].checked==false)){
+	alert("please select gender");
+	document.form.gender.focus;
+	return false;
+	}
+if(d==""){
+	alert("please enter blood pressure");
+	document.form.pressure.focus();
+	return false;
+}
+
+if(e==""){
+	alert("please enter cholestral");
+	document.form.cholestral.focus();
+	return false;
+}
+if(f==""){
+	alert("please enter sugar");
+	document.form.sugar.focus();
+	return false;
+}
+if(g==""){
+	alert("please enter electrocardiograph");
+	document.form.electrocardiograph.focus();
+	return false;
+}
+if(h==""){
+	alert("please enter heart rate");
+	document.form.heartrate.focus();
+	return false;
+}
+if(i==""){
+	alert("please enter angina");
+	document.form.angina.focus();
+	return false;
+}
+if(j==""){
+	alert("please enter st Depression rest");
+	document.form.strest.focus();
+	return false;
+}
+if((document.form.symtoms[0].checked==false)&&(document.form.symtoms[1].checked==false)
+		&&(document.form.symtoms[2].checked==false)&&(document.form.symtoms[3].checked==false)
+		&&(document.form.symtoms[4].checked==false)&&(document.form.symtoms[5].checked==false)
+		&&(document.form.symtoms[6].checked==false)&&(document.form.symtoms[7].checked==false)
+		&&(document.form.symtoms[8].checked==false)&&(document.form.symtoms[9].checked==false)
+		&&(document.form.symtoms[10].checked==false)&&(document.form.symtoms[11].checked==false)
+		&&(document.form.symtoms[12].checked==false)&&(document.form.symtoms[13].checked==false)
+		&&(document.form.symtoms[14].checked==false)&&(document.form.symtoms[15].checked==false)
+		&&(document.form.symtoms[16].checked==false)&&(document.form.symtoms[17].checked==false))
+{
+	alert("please select symtoms");
+	document.form.symtoms.focus;
+	return false;
+}
+if(document.form.disease.selectedIndex==0){
+	alert("please select disease");
+	document.form.disease.focus();
+	return false;  
+}
+
+	}
+</script>
+<style type="text/css">
+body{
+background-image: url("images/machine3.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+}
+#title{
+margin-left:430px;
+margin-top:10px;
+font-size:30px;
+width:1200px;
+font-family:fantasy;
+color:green;
+}
+#box{
+list-style:none;
+margin-left:340px;
+margin-bottom:10px;
+margin-top:30px;
+}
+#home{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:200px;
+height:30px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+#doc{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:200px;
+height:30px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+#pat{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:300px;
+height:10px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+
+#in{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:300px;
+height:10px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+
+#regi{
+margin-left: 460px;
+margin-top:25px;
+font-size:25px;
+color:darkblue;
+}
+#tab{
+margin-left:280px;
+margin-top:10px;
+border:none;
+width:800px;
+height:700px;
+background-color:orange;
+}
+#name{
+border:none;
+width:250px;
+height:20px;
+margin-left: 5px;
+}
+#age{
+border:none;
+width:250px;
+height:20px;
+margin-left: 5px;
+}
+#gender{
+border:none;
+width:20px;
+}
+#pressure{
+border:none;
+width:250px;
+height:20px;
+margin-left: 5px;
+}
+#sugar{
+border:none;
+width:250px;
+height:20px;
+margin-left: 5px;
+}
+#heartrate{
+border:none;
+width:250px;
+height:20px;
+margin-left: 5px;
+}
+#cholestral{
+border:none;
+width:250px;
+height:20px;
+margin-left: 5px;
+}
+#electro{
+border:none;
+width:250px;
+height:20px;
+margin-left: 5px;
+}
+#angina{
+border:none;
+width:250px;
+height:20px;
+margin-left: 5px;
+}
+#dep{
+border:none;
+width:250px;
+height:20px;
+margin-left: 5px;
+}
+
+#chest{
+margin-left:16px;
+font-size:20px;
+color:blue;
+}
+#pre{
+margin-left:60px;
+font-size:20px;
+color:blue;
+}
+#fe{
+margin-left:29px;
+font-size:20px;
+color:blue;
+}
+#cau{
+margin-left:72px;
+font-size:20px;
+color:blue;
+}
+#abd{
+margin-left:15px;
+font-size:20px;
+color:blue;
+}
+#wei{
+margin-left:16px;
+font-size:20px;
+color:blue;
+}
+#fat{
+margin-left:52px;
+font-size:20px;
+color:blue;
+}
+#skin{
+margin-left:75px;
+font-size:20px;
+color:blue;
+}
+#sne{
+margin-left:6px;
+font-size:20px;
+color:blue;
+}
+
+#swe{
+margin-left:70px;
+font-size:20px;
+color:blue;
+}
+#whe{
+margin-left:16px;
+font-size:20px;
+color:blue;
+}
+#stu{
+margin-left:36px;
+font-size:20px;
+color:blue;
+}
+#sho{
+margin-left:35px;
+font-size:20px;
+color:blue;
+}
+
+#vom{
+margin-left:64px;
+font-size:20px;
+color:blue;
+}
+#eye{
+margin-left:61px;
+font-size:20px;
+color:blue;
+}
+#joi{
+margin-left:45px;
+font-size:20px;
+color:blue;
+}
+#rab{
+margin-left:16px;
+font-size:20px;
+color:blue;
+}
+
+#chi{
+margin-left:49px;
+font-size:20px;
+color:blue;
+}
+
+#thr{
+margin-left:26px;
+font-size:20px;
+color:blue;
+}
+
+#pne{
+margin-left:31px;
+font-size:20px;
+color:blue;
+}
+
+#per{
+margin-left:16px;
+font-size:20px;
+color:blue;
+}
+#disease{
+border:none;
+width:250px;
+height:20px;
+margin-left: 5px;
+}
+#med{
+border:none;
+width:250px;
+height:20px;
+margin-left: 5px;
+color:blue;
+}
+#benazepril{
+margin-left:10px;
+font-size:20px;
+color:blue;
+}
+#abraxane{
+margin-left:30px;
+font-size:20px;
+color:blue;
+}
+#cyclosporine{
+margin-left:30px;
+font-size:20px;
+color:blue;
+}
+#cetirizine{
+margin-left:10px;
+font-size:20px;
+color:blue;
+}
+#albuterol{
+margin-left:37px;
+font-size:20px;
+color:blue;
+}
+#nitrofurantoin{
+margin-left:30px;
+font-size:20px;
+color:blue;
+}
+#azasan {
+margin-left:10px;
+font-size:20px;
+color:blue;
+}
+#emtricitabine{
+margin-left:53px;
+font-size:20px;
+color:blue;
+}
+#glimepiride{
+margin-left:3px;
+font-size:20px;
+color:blue;
+}
+#erythromycin{
+margin-left:10px;
+font-size:20px;
+color:blue;
+}
+#aspirin {
+margin-left:10px;
+font-size:20px;
+color:blue;
+}
+#cefuroxime{
+margin-left:44px;
+font-size:20px;
+color:blue;
+}
+#log{
+margin-left:570px;
+margin-top: 10px;
+background-color:blue;
+color:#FFFFFF;
+}
+</style>
+</head>
+<body>
+<div id="title">
+TAILORED TREATEMENT RECOMMENDATION
+</div>
+<ol id="box">
+<li>
+<a href="upload.html" id="doc">Upload Patient Details</a>
+<a href="medicine.html" id="doc">Upload Medicine Details</a>
+<a href="patient.html" id="pat">Patient</a>
+<a href="index.html" id="in">Logout</a></li>
+</ol>
+<div id="regi">
+UPLOAD PATIENT DETAILS
+</div>
+<form name="form" action="upload.jsp" method="post" onsubmit="return validation()">
+<table border="1" id="tab">
+<tr>
+<th>Age</th>
+<td><input type="number" name="age" placeholder="age" id="age"></td><tr/>
+<tr>
+<th>Gender</th>
+<td><input type="radio" id="gender" name="gender" value="male">Male
+<input type="radio" id="gender" name="gender" value="female">Female</td><tr/>
+<tr>
+<th>Blood Pressure(94-200)</th>
+<td><input type="number" name="pressure" placeholder="pressure" id="pressure"></td>
+<tr/>
+
+
+<tr>
+<th>Cholestral(126-564)</th>
+<td><input type="number" name="cholestral" placeholder="cholestral"id="cholestral">
+</td>
+</tr>
+
+
+<tr>
+<th>Fast Blood Sugar(90-300)</th>
+<td><input type="number" name="sugar" placeholder="sugar" id="sugar">
+</td>
+</tr>
+ 
+<tr>
+<th>Electrocardiograph(0-2)</th>
+<td><input type="number" name="electrocardiograph"  placeholder="electrocardiograph" id="electro">
+</td>
+</tr>
+
+<tr>
+<th>Heart Rate(71-200)</th>
+<td><input type="number" name="heartrate" placeholder="heartrate" id="heartrate">
+</td>
+</tr>
+
+<tr>
+<th>Exercise Angina(0,1)</th>
+<td><input type="number" name="angina" placeholder="angina" id="angina">
+</td>
+</tr>
+
+<tr>
+<th>ST Depression Exercise Rest(0-6.2)</th>
+<td><input type="text" name="strest" placeholder="strest" id="dep">
+</td>
+</tr>
+
+
+<tr>
+<th>Symtoms</th>
+<td>
+<input type="checkbox" name="symtoms" id="chest" value="chest pain">chest pain
+<input type="checkbox" name="symtoms" id="pre" value="chest pressure">chest pressure
+<input type="checkbox" name="symtoms" id="fe" value="fever">fever
+<input type="checkbox" name="symtoms" id="cau" value="caugh">caugh<br/>
+<input type="checkbox" name="symtoms" id="wei" value="weight loss">weight loss
+<input type="checkbox" name="symtoms" id="fat" value="fatique">fatique
+<input type="checkbox" name="symtoms" id="skin" value="skin problems">skin problems
+<input type="checkbox" name="symtoms" id="abd" value="abdominal pain">abdominal pain<br/>`
+<input type="checkbox" name="symtoms" id="sne" value="sneezing">sneezing
+<input type="checkbox" name="symtoms" id="swe" value="swelloneyes">swellon eyes
+<input type="checkbox" name="symtoms" id="stu" value="stuffy nose">stuffy nose
+<input type="checkbox" name="symtoms" id="sho" value="shortness breathing">shortness breath<br/>
+<input type="checkbox" name="symtoms" id="whe" value="wheezing">wheezing
+<input type="checkbox" name="symtoms" id="vom" value="vomiting">vomiting
+<input type="checkbox" name="symtoms" id="eye" value="pain eyes">pain eyes
+<input type="checkbox" name="symtoms" id="joi" value="joint pain">joint pain<br/>
+<input type="checkbox" name="symtoms" id="rab" value="rabid breath">rabid breath
+<input type="checkbox" name="symtoms" id="chi" value="fever and chill">fever and chill
+<input type="checkbox" name="symtoms" id="thr" value="thick throat">thick throat
+<input type="checkbox" name="symtoms" id="pne" value="pneumonia">pneumonia<br/>
+<input type="checkbox" name="symtoms" id="per" value="persistent diarrhea">persistent diarrhea
+</td>
+</tr>
+
+<tr>
+<th>Disease</th>
+<td><select name="disease" id="disease">
+<option value="slect">--select--</option>
+<option value="heart disease">heart disease</option>
+<option value="cancer">cancer</option>
+<option value="auto immune disease">auto immune disease</option>
+<option value="allergy">allergies</option>
+<option value="ashthma">ashthma</option>
+<option value="liver disease">liver disease</option>
+<option value="celiac disease">celiac disease</option>
+<option value="HIV/AIDS">HIV/AID S</option>
+<option value="diabetes">diabetes</option>
+<option value="diphtheria">diphtheria</option>
+<option value="headaches">headaches</option>
+</select>
+</td>
+</tr>
+
+
+</table>
+<input type="submit" value="Submit" id="log">
+</form>
+</body>
+</html>

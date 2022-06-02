@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function validation(){
+var a=document.form.username.value;
+var b=document.form.mobilenumber.value;
+var c=document.form.age.value;
+var d=document.form.gender.value;
+var e=document.form.address.value;
+var f=document.form.location.value;
+var g=document.form.email.value;
+var h=document.form.password.value;
+if(a==""){
+alert("Enter Patient name");
+document.form.username.focus();
+return false;
+}
+if(b==""){
+	alert("Enter mobile number");
+	document.form.mobilenumber.focus();
+	return false;
+	}
+	if(b.length<10){
+		alert("please enter 10 digits");
+		document.form.mobilenumber.focus();
+	}
+if(c==""){
+	alert("Enter age");
+	document.form.age.focus();
+	return false;
+	}
+if((document.form.gender[0].checked==false)&&(document.form.gender[1].checked==false)){
+	alert("please select gender");
+	document.form.gender.focus;
+	return false;
+	}
+if(e==""){
+	alert("Enter your address");
+	document.form.address.focus();
+	return false;
+	}
+if(f==""){
+	alert("Enter location");
+	document.form.location.focus();
+	return false;
+	}
+if(g==""){
+	alert("Enter email");
+	document.form.email.focus();
+	return false;
+	}
+
+if(h==""){
+	alert("Enter password");
+	document.form.password.focus();
+	return false;
+	}
+	if(h.length<8)
+		{
+		alert("please enter 8 characters");
+		document.form.password.focus;
+		return false;
+		}
+	if(h.length>10)
+	{
+	alert("only 8 characters");
+	document.form.password.focus;
+	return false;
+	}
+}
+</script>
+<style type="text/css">
+body{
+background-image: url("images/machine3.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+}
+#title{
+margin-left:350px;
+margin-top:10px;
+font-size:30px;
+width:1200px;
+font-family:fantasy;
+color:green;
+}
+#box{
+list-style:none;
+margin-left:400px;
+margin-bottom:10px;
+margin-top:30px;
+}
+#home{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:200px;
+height:30px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+#doc{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:200px;
+height:30px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+#pat{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:300px;
+height:10px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+
+#in{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+color:#FFFFFF;
+border:1px solid black;
+width:300px;
+height:10px;
+border-radius:10px;
+margin-left: 5px;
+background-color: brown;
+}
+
+#regi{
+margin-left: 430px;
+margin-top:25px;
+font-size:25px;
+color:darkblue;
+}
+#tab{
+margin-left:370px;
+margin-top:10px;
+border:none;
+width:400px;
+height:400px;
+background-color:green;
+}
+#name{
+border:none;
+width:250px;
+padding:4px;
+margin-left:05px;
+}
+
+#number{
+border:none;
+width:250px;
+padding:4px;
+margin-left:05px;
+}
+#age{
+border:none;
+width:250px;
+padding:4px;
+margin-left:05px;
+}
+#add{
+border:none;
+width:250px;
+padding:4px;
+margin-left:05px;
+}
+#loc{
+border:none;
+width:250px;
+padding:4px;
+margin-left:05px;
+}
+#ema{
+border:none;
+width:250px;
+padding:4px;
+margin-left:05px;
+}
+#pass{
+border:none;
+width:250px;
+padding:4px;
+margin-left:05px;
+}
+#log{
+margin-left:530px;
+margin-top: 10px;
+background-color:blue;
+color:#FFFFFF;
+}
+</style>
+</head>
+<body>
+<div id="title">
+TAILORED TREATEMENT RECOMMENDATION
+</div>
+<ol id="box">
+<li>
+<a href="Doctor.html" id="doc">Doctor</a>
+<a href="patient.html" id="pat">Patient</a>
+<a href="index.html" id="in">Logout</a></li>
+</ol>
+<div id="regi">
+PATIENT REGISTRATION
+</div>
+<form name="form" action="patreg.jsp" method="post" onsubmit="return validation()">
+<table border="1" id="tab">
+<tr>
+<th>Patient Name</th>
+<td><input type="text" name="username" placeholder="patient name" id="name"></td>
+<tr/>
+
+<tr>
+<th>Mobilenumber</th>
+<td><input type="number" name="mobilenumber"  placeholder="mobilenumber" id="number"></td><tr/>
+<tr>
+<th>Age</th>
+<td><input type="number" name="age" placeholder="age" id="age"></td><tr/>
+<tr>
+<th>Gender</th>
+<td><input type="radio" id="gender" name="gender" value="male">Male
+<input type="radio" id="gender" name="gender" value="female">Female</td><tr/>
+
+<tr>
+<th>Address</th>
+<td><input type="text" name="address" placeholder="address" id="add"></td><tr/>
+
+<tr>
+<th>Location</th>
+<td><input type="text" name="location" placeholder="location" id="loc"></td><tr/>
+
+<tr>
+<th>Email</th>
+<td><input type="text" name="email" placeholder="email" id="ema"></td><tr/>
+
+
+<tr>
+<th>Password</th>
+<td><input type="password" name="password"  placeholder="password" id="pass"></td><tr/>
+
+
+</table>
+<input type="submit" value="Register" id="log">
+</form>
+</body>
+</html>
